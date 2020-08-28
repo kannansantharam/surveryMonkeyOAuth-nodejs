@@ -30,14 +30,7 @@ app.get('/auth/callback', async function (req, res) {
         res.status(200).send(er.response.data);
     }
 });
-app.post("/auth", async function (req, res) {
-    app.get('https://api.surveymonkey.com/oauth/authorize?response_type=code&redirect_uri=http://localhost:3000/auth/callback&client_id=XXX',
-        function (req, res) {
-            console.log(res);
-            console.log(req);
-            res.status(200).send(res);
-        })
-})
+
 app.options('*', cors()); // Enabling Pre Flight Request for all calls.
 
 app.listen(port);
