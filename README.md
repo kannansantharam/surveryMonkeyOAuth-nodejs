@@ -2,7 +2,7 @@
 SurkeyMonkey OAuth using axios (NodeJS app)
 
 
-redirect the users to this URL and replace the client id
+redirect the users to this URL (replace the client id and redirect URL)
 https://api.surveymonkey.com/oauth/authorize?response_type=code&redirect_uri=http://localhost:3000/auth/callback&client_id={{client_id}}
 
 
